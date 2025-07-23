@@ -83,8 +83,9 @@
   
   /* Enhanced hover effects */
   .experience-card {
-    @apply transition-all duration-500 ease-in-out relative overflow-hidden;
+    @apply transition-all duration-700 ease-out relative overflow-hidden;
     transform: translateY(0) scale(1);
+    will-change: transform, box-shadow;
   }
   
   .experience-card::before {
@@ -94,8 +95,9 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.05), transparent);
-    transition: left 0.6s ease-in-out;
+    background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.08), transparent);
+    transition: left 0.8s ease-in-out;
+    z-index: 1;
   }
   
   .experience-card:hover::before {
@@ -103,21 +105,46 @@
   }
   
   .experience-card:hover {
-    transform: translateY(-12px) scale(1.02);
+    transform: translateY(-16px) scale(1.02);
     box-shadow: 
-      0 25px 50px rgba(102, 126, 234, 0.15),
-      0 10px 20px rgba(0, 0, 0, 0.1);
+      0 32px 64px rgba(102, 126, 234, 0.18),
+      0 16px 32px rgba(0, 0, 0, 0.12),
+      0 8px 16px rgba(102, 126, 234, 0.1);
+  }
+  
+  /* Smooth lift effect for all content inside the card */
+  .experience-card > * {
+    position: relative;
+    z-index: 2;
+    transition: transform 0.6s ease-out;
+  }
+  
+  .experience-card:hover > * {
+    transform: translateY(-2px);
   }
   
   /* Tech badge animations */
   .tech-badge-animated {
-    @apply transition-all duration-300 ease-in-out;
-    transform: scale(1);
+    @apply transition-all duration-400 ease-out;
+    transform: scale(1) translateY(0);
+    will-change: transform, box-shadow;
   }
   
   .tech-badge-animated:hover {
-    transform: scale(1.05) translateY(-2px);
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+    transform: scale(1.08) translateY(-4px);
+    box-shadow: 
+      0 6px 20px rgba(102, 126, 234, 0.25),
+      0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* When parent card is hovered, badges get a subtle lift */
+  .experience-card:hover .tech-badge-animated {
+    transform: scale(1.02) translateY(-1px);
+  }
+  
+  /* Individual badge hover effect takes precedence */
+  .experience-card:hover .tech-badge-animated:hover {
+    transform: scale(1.08) translateY(-4px);
   }
   
   /* Floating animation for icons */
