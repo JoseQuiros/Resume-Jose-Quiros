@@ -181,9 +181,9 @@
         </div>
         <div class="max-w-4xl mx-auto">
           <div class="space-y-12">
-            <!-- Experience Item 1 -->
-            <div class="experience-card rounded-2xl shadow-lg p-8 animate-fade-in-left animate-stagger-1 transition-colors duration-300" 
-                 :class="darkMode ? 'bg-dark-800' : 'bg-white'">
+                         <!-- Experience Item 1 -->
+                           <div class="rounded-2xl shadow-lg p-6 card-hover animate-slide-in-left transition-colors duration-300" 
+                   :class="darkMode ? 'bg-dark-800' : 'bg-white'">
               <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
                 <div>
                   <h3 class="text-xl font-bold mb-2 transition-colors duration-300" :class="darkMode ? 'text-white' : 'text-gray-900'">
@@ -211,17 +211,17 @@
                   <li>Utilized Cursor with various AI models for development and migration tasks</li>
                 </ul>
               </div>
-              <div class="flex flex-wrap gap-3">
-                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Java Spring Boot</span>
-                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">SQL Server</span>
-                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">JUnit</span>
-                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Azure DevOps</span>
-              </div>
+                             <div class="flex flex-wrap gap-3">
+                 <span class="px-3 py-2 rounded-full text-sm font-medium border transition-colors duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Java Spring Boot</span>
+                 <span class="px-3 py-2 rounded-full text-sm font-medium border transition-colors duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">SQL Server</span>
+                 <span class="px-3 py-2 rounded-full text-sm font-medium border transition-colors duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">JUnit</span>
+                 <span class="px-3 py-2 rounded-full text-sm font-medium border transition-colors duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Azure DevOps</span>
+               </div>
             </div>
 
-            <!-- Experience Item 2 -->
-            <div class="experience-card rounded-2xl shadow-lg p-8 animate-fade-in-right animate-stagger-2 transition-colors duration-300" 
-                 :class="darkMode ? 'bg-dark-800' : 'bg-white'">
+                         <!-- Experience Item 2 -->
+                           <div class="rounded-2xl shadow-lg p-6 card-hover animate-slide-up transition-colors duration-300" 
+                   :class="darkMode ? 'bg-dark-800' : 'bg-white'">
               <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
                 <div>
                   <h3 class="text-xl font-bold mb-2 transition-colors duration-300" :class="darkMode ? 'text-white' : 'text-gray-900'">
@@ -247,16 +247,16 @@
                   <li>Contributed to performance investigations</li>
                 </ul>
               </div>
-              <div class="flex flex-wrap gap-3">
-                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Java Spring Boot</span>
-                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Python</span>
-                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">SQL Server</span>
-              </div>
+                             <div class="flex flex-wrap gap-3">
+                 <span class="px-3 py-2 rounded-full text-sm font-medium border transition-colors duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Java Spring Boot</span>
+                 <span class="px-3 py-2 rounded-full text-sm font-medium border transition-colors duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Python</span>
+                 <span class="px-3 py-2 rounded-full text-sm font-medium border transition-colors duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">SQL Server</span>
+               </div>
             </div>
 
-            <!-- Experience Item 3 -->
-            <div class="experience-card rounded-2xl shadow-lg p-8 animate-fade-in-left animate-stagger-3 transition-colors duration-300" 
-                 :class="darkMode ? 'bg-dark-800' : 'bg-white'">
+                         <!-- Experience Item 3 -->
+                           <div class="rounded-2xl shadow-lg p-6 card-hover animate-slide-in-right transition-colors duration-300" 
+                   :class="darkMode ? 'bg-dark-800' : 'bg-white'">
               <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
                 <div>
                   <h3 class="text-xl font-bold mb-2 transition-colors duration-300" :class="darkMode ? 'text-white' : 'text-gray-900'">
@@ -273,17 +273,17 @@
                 Developed a web application using a low-code platform, enhancing its capabilities through custom JavaScript and SQL scripts. 
                 Managed user support requests, ensuring SLA compliance. Collaborated directly with clients to analyze problems and deliver appropriate solutions.
               </p>
-              <div class="flex flex-wrap gap-3">
-                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Low-code platform</span>
-                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Microsoft SQL Server</span>
-                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">GitLab</span>
-                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">JavaScript</span>
-              </div>
+                             <div class="flex flex-wrap gap-3">
+                 <span class="px-3 py-2 rounded-full text-sm font-medium border transition-colors duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Low-code platform</span>
+                 <span class="px-3 py-2 rounded-full text-sm font-medium border transition-colors duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Microsoft SQL Server</span>
+                 <span class="px-3 py-2 rounded-full text-sm font-medium border transition-colors duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">GitLab</span>
+                 <span class="px-3 py-2 rounded-full text-sm font-medium border transition-colors duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">JavaScript</span>
+               </div>
             </div>
 
-            <!-- Experience Item 4 -->
-            <div class="experience-card rounded-2xl shadow-lg p-8 animate-fade-in-right animate-stagger-4 transition-colors duration-300" 
-                 :class="darkMode ? 'bg-dark-800' : 'bg-white'">
+                         <!-- Experience Item 4 -->
+                           <div class="rounded-2xl shadow-lg p-6 card-hover animate-slide-in-left transition-colors duration-300" 
+                   :class="darkMode ? 'bg-dark-800' : 'bg-white'">
               <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
                 <div>
                   <h3 class="text-xl font-bold mb-2 transition-colors duration-300" :class="darkMode ? 'text-white' : 'text-gray-900'">
@@ -309,12 +309,12 @@
                   <li>CI/CD pipeline configuration with GitHub Actions for Azure deployments</li>
                 </ul>
               </div>
-              <div class="flex flex-wrap gap-3">
-                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">ASP.NET</span>
-                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Vue.js</span>
-                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Entity Framework</span>
-                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">GitHub Actions</span>
-              </div>
+                             <div class="flex flex-wrap gap-3">
+                 <span class="px-3 py-2 rounded-full text-sm font-medium border transition-colors duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">ASP.NET</span>
+                 <span class="px-3 py-2 rounded-full text-sm font-medium border transition-colors duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Vue.js</span>
+                 <span class="px-3 py-2 rounded-full text-sm font-medium border transition-colors duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Entity Framework</span>
+                 <span class="px-3 py-2 rounded-full text-sm font-medium border transition-colors duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">GitHub Actions</span>
+               </div>
             </div>
           </div>
         </div>
@@ -333,9 +333,9 @@
         <div class="max-w-6xl mx-auto">
           <!-- Skills Grid -->
           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <!-- Backend Skills -->
-            <div class="rounded-2xl shadow-lg p-6 card-hover animate-slide-in-left transition-colors duration-300" 
-                 :class="darkMode ? 'bg-dark-700' : 'bg-white'">
+                         <!-- Backend Skills -->
+             <div class="rounded-2xl shadow-lg p-6 card-hover animate-slide-in-left transition-colors duration-300" 
+                  :class="darkMode ? 'bg-dark-700' : 'bg-white'">
               <div class="flex items-center mb-4">
                 <Server class="w-8 h-8 text-primary-600 mr-3" />
                 <h3 class="text-lg font-bold transition-colors duration-300" :class="darkMode ? 'text-white' : 'text-gray-900'">
@@ -345,33 +345,33 @@
               <div class="space-y-3">
                 <div v-for="skill in backendSkills" :key="skill" 
                      class="px-3 py-2 rounded-lg text-center font-medium transition-colors duration-300"
-                     :class="darkMode ? 'bg-primary-900/30 text-primary-300' : 'bg-primary-100 text-primary-800'">
+                     :class="darkMode ? 'bg-primary-700/60 text-primary-200' : 'bg-primary-100 text-primary-800'">
                   {{ skill }}
                 </div>
               </div>
             </div>
 
-            <!-- Database Skills -->
-            <div class="rounded-2xl shadow-lg p-6 card-hover animate-slide-up transition-colors duration-300" 
-                 :class="darkMode ? 'bg-dark-700' : 'bg-white'">
-              <div class="flex items-center mb-4">
-                <Database class="w-8 h-8 text-primary-600 mr-3" />
-                <h3 class="text-lg font-bold transition-colors duration-300" :class="darkMode ? 'text-white' : 'text-gray-900'">
-                  Databases
-                </h3>
-              </div>
-              <div class="space-y-3">
-                <div v-for="skill in databaseSkills" :key="skill" 
-                     class="px-3 py-2 rounded-lg text-center font-medium transition-colors duration-300"
-                     :class="darkMode ? 'bg-blue-900/30 text-blue-300' : 'bg-blue-100 text-blue-800'">
-                  {{ skill }}
-                </div>
-              </div>
-            </div>
+                                                   <!-- Database Skills -->
+              <div class="rounded-2xl shadow-lg p-6 card-hover animate-slide-up transition-colors duration-300" 
+                   :class="darkMode ? 'bg-dark-700' : 'bg-white'">
+               <div class="flex items-center mb-4">
+                 <Database class="w-8 h-8 text-primary-600 mr-3" />
+                 <h3 class="text-lg font-bold transition-colors duration-300" :class="darkMode ? 'text-white' : 'text-gray-900'">
+                   Databases
+                 </h3>
+               </div>
+               <div class="space-y-3">
+                 <div v-for="skill in databaseSkills" :key="skill" 
+                      class="px-3 py-2 rounded-lg text-center font-medium transition-colors duration-300"
+                      :class="darkMode ? 'bg-emerald-700/60 text-emerald-200' : 'bg-emerald-100 text-emerald-800'">
+                   {{ skill }}
+                 </div>
+               </div>
+             </div>
 
-            <!-- Tools Skills -->
-            <div class="rounded-2xl shadow-lg p-6 card-hover animate-slide-in-right transition-colors duration-300" 
-                 :class="darkMode ? 'bg-dark-700' : 'bg-white'">
+                         <!-- Tools Skills -->
+             <div class="rounded-2xl shadow-lg p-6 card-hover animate-slide-in-right transition-colors duration-300" 
+                  :class="darkMode ? 'bg-dark-700' : 'bg-white'">
               <div class="flex items-center mb-4">
                 <Settings class="w-8 h-8 text-primary-600 mr-3" />
                 <h3 class="text-lg font-bold transition-colors duration-300" :class="darkMode ? 'text-white' : 'text-gray-900'">
@@ -381,15 +381,15 @@
               <div class="space-y-3">
                 <div v-for="skill in toolsSkills" :key="skill" 
                      class="px-3 py-2 rounded-lg text-center font-medium transition-colors duration-300"
-                     :class="darkMode ? 'bg-green-900/30 text-green-300' : 'bg-green-100 text-green-800'">
+                     :class="darkMode ? 'bg-green-700/60 text-green-200' : 'bg-green-100 text-green-800'">
                   {{ skill }}
                 </div>
               </div>
             </div>
 
-            <!-- Frameworks & Libraries -->
-            <div class="rounded-2xl shadow-lg p-6 card-hover animate-slide-in-left transition-colors duration-300" 
-                 :class="darkMode ? 'bg-dark-700' : 'bg-white'">
+                         <!-- Frameworks & Libraries -->
+             <div class="rounded-2xl shadow-lg p-6 card-hover animate-slide-in-left transition-colors duration-300" 
+                  :class="darkMode ? 'bg-dark-700' : 'bg-white'">
               <div class="flex items-center mb-4">
                 <Code class="w-8 h-8 text-primary-600 mr-3" />
                 <h3 class="text-lg font-bold transition-colors duration-300" :class="darkMode ? 'text-white' : 'text-gray-900'">
@@ -399,16 +399,16 @@
               <div class="space-y-3">
                 <div v-for="skill in frameworkSkills" :key="skill" 
                      class="px-3 py-2 rounded-lg text-center font-medium transition-colors duration-300"
-                     :class="darkMode ? 'bg-purple-900/30 text-purple-300' : 'bg-purple-100 text-purple-800'">
+                     :class="darkMode ? 'bg-purple-700/60 text-purple-200' : 'bg-purple-100 text-purple-800'">
                   {{ skill }}
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Additional Skills -->
-          <div class="rounded-2xl shadow-lg p-8 animate-slide-up transition-colors duration-300" 
-               :class="darkMode ? 'bg-dark-700' : 'bg-white'">
+                                           <!-- Additional Skills -->
+            <div class="rounded-2xl shadow-lg p-8 card-hover animate-slide-up transition-colors duration-300" 
+                 :class="darkMode ? 'bg-dark-700' : 'bg-white'">
             <h3 class="text-xl font-bold mb-6 text-center transition-colors duration-300" :class="darkMode ? 'text-white' : 'text-gray-900'">
               Additional Competencies
             </h3>
@@ -437,7 +437,7 @@
                 <div class="flex flex-wrap gap-2">
                   <span v-for="method in methodologies" :key="method"
                         class="px-3 py-1 rounded-full text-sm font-medium transition-colors duration-300"
-                        :class="darkMode ? 'bg-primary-900/50 text-primary-300 border border-primary-700' : 'bg-primary-100 text-primary-800 border border-primary-200'">
+                        :class="darkMode ? 'bg-primary-700/60 text-primary-200 border border-primary-600' : 'bg-primary-100 text-primary-800 border border-primary-200'">
                     {{ method }}
                   </span>
                 </div>

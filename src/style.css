@@ -33,13 +33,30 @@
   }
   
   .card-hover {
-    @apply transition-all duration-500 ease-in-out;
-    transform: translateY(0) scale(1);
+    @apply transition-all duration-700 ease-out;
+    transform: translateY(0) scale(1) rotateX(0deg);
+    transform-style: preserve-3d;
+    will-change: transform, box-shadow;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   }
   
   .card-hover:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.15);
+    transform: translateY(-15px) scale(1.03) rotateX(2deg);
+    box-shadow: 
+      0 30px 60px rgba(102, 126, 234, 0.25),
+      0 15px 35px rgba(0, 0, 0, 0.15),
+      0 5px 15px rgba(102, 126, 234, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  /* Smooth content animation */
+  .card-hover > * {
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  .card-hover:hover > * {
+    transform: translateY(-3px);
   }
   
   .tech-badge {
@@ -56,30 +73,72 @@
 }
 
 @layer utilities {
-  /* Smooth entrance animations */
+  /* Enhanced smooth entrance animations */
   .animate-fade-in-up {
-    animation: fadeInUp 0.8s ease-out forwards;
+    animation: fadeInUp 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(40px) scale(0.95);
   }
   
   .animate-fade-in-left {
-    animation: fadeInLeft 0.8s ease-out forwards;
+    animation: fadeInLeft 1.0s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
     opacity: 0;
-    transform: translateX(-30px);
+    transform: translateX(-40px) scale(0.95) rotateY(-5deg);
   }
   
   .animate-fade-in-right {
-    animation: fadeInRight 0.8s ease-out forwards;
+    animation: fadeInRight 1.0s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateX(40px) scale(0.95) rotateY(5deg);
   }
   
-  /* Staggered animations */
-  .animate-stagger-1 { animation-delay: 0.1s; }
-  .animate-stagger-2 { animation-delay: 0.2s; }
-  .animate-stagger-3 { animation-delay: 0.3s; }
-  .animate-stagger-4 { animation-delay: 0.4s; }
+  .animate-slide-in-left {
+    animation: slideInLeft 1.0s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    opacity: 0;
+    transform: translateX(-40px) scale(0.95);
+  }
+  
+  .animate-slide-in-right {
+    animation: slideInRight 1.0s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    opacity: 0;
+    transform: translateX(40px) scale(0.95);
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 1.0s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  
+  /* Enhanced staggered animations */
+  .animate-stagger-1 { animation-delay: 0.15s; }
+  .animate-stagger-2 { animation-delay: 0.35s; }
+  .animate-stagger-3 { animation-delay: 0.55s; }
+  .animate-stagger-4 { animation-delay: 0.75s; }
+  
+  /* Smooth reveal animation for tech badges */
+  .card-hover .flex.flex-wrap {
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  .card-hover:hover .flex.flex-wrap {
+    transform: translateY(-2px);
+  }
+  
+  /* Individual tech badge subtle animation */
+  .card-hover span[class*="px-3"] {
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: translateY(0) scale(1);
+  }
+  
+  .card-hover:hover span[class*="px-3"] {
+    transform: translateY(-1px) scale(1.02);
+  }
+  
+  .card-hover span[class*="px-3"]:hover {
+    transform: translateY(-3px) scale(1.05) !important;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+  }
   
   /* Enhanced hover effects */
   .experience-card {
@@ -125,7 +184,7 @@
   
   /* Tech badge animations */
   .tech-badge-animated {
-    @apply transition-all duration-400 ease-out;
+    @apply transition-all duration-300 ease-out;
     transform: scale(1) translateY(0);
     will-change: transform, box-shadow;
   }
@@ -158,37 +217,94 @@
   }
 }
 
-/* Keyframe definitions */
+/* Enhanced keyframe definitions */
 @keyframes fadeInUp {
-  from {
+  0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(40px) scale(0.95);
   }
-  to {
+  60% {
+    opacity: 0.8;
+    transform: translateY(-5px) scale(1.02);
+  }
+  100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
 
 @keyframes fadeInLeft {
-  from {
+  0% {
     opacity: 0;
-    transform: translateX(-30px);
+    transform: translateX(-40px) scale(0.95) rotateY(-5deg);
   }
-  to {
+  60% {
+    opacity: 0.8;
+    transform: translateX(5px) scale(1.02) rotateY(1deg);
+  }
+  100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0) scale(1) rotateY(0deg);
   }
 }
 
 @keyframes fadeInRight {
-  from {
+  0% {
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateX(40px) scale(0.95) rotateY(5deg);
   }
-  to {
+  60% {
+    opacity: 0.8;
+    transform: translateX(-5px) scale(1.02) rotateY(-1deg);
+  }
+  100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0) scale(1) rotateY(0deg);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px) scale(0.95);
+  }
+  60% {
+    opacity: 0.8;
+    transform: translateX(3px) scale(1.01);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40px) scale(0.95);
+  }
+  60% {
+    opacity: 0.8;
+    transform: translateX(-3px) scale(1.01);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  60% {
+    opacity: 0.8;
+    transform: translateY(-3px) scale(1.01);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
 
