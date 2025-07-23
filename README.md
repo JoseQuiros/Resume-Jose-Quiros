@@ -1,17 +1,17 @@
-# Portfolio Personal - José Quirós Montenegro
+# Personal Portfolio - José Quirós Montenegro
 
-Portafolio personal desarrollado con Vue 3, TypeScript y Tailwind CSS. Presenta mi experiencia como Backend Developer especializado en Java, Spring Boot y .NET.
+Personal portfolio developed with Vue 3, TypeScript, and Tailwind CSS. Showcases my experience as a Backend Developer specialized in Java, Spring Boot, and .NET.
 
-## 🚀 Características
+## 🚀 Features
 
-- **Vue 3** con Composition API y TypeScript
-- **Tailwind CSS** para estilos modernos y responsivos
-- **Lucide Icons** para iconografía consistente
-- **Diseño responsivo** que se adapta a todos los dispositivos
-- **Animaciones suaves** para una mejor experiencia de usuario
-- **Optimizado para SEO** con meta tags apropiados
+- **Vue 3** with Composition API and TypeScript
+- **Tailwind CSS** for modern and responsive styling
+- **Lucide Icons** for consistent iconography
+- **Responsive design** that adapts to all devices
+- **Smooth animations** for better user experience
+- **SEO optimized** with appropriate meta tags
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Technologies Used
 
 - Vue 3
 - TypeScript
@@ -19,65 +19,65 @@ Portafolio personal desarrollado con Vue 3, TypeScript y Tailwind CSS. Presenta 
 - Vite
 - Lucide Vue Next
 
-## 📦 Instalación
+## 📦 Installation
 
-1. Clona el repositorio:
+1. Clone the repository:
 ```bash
-git clone [URL_DEL_REPOSITORIO]
+git clone [REPOSITORY_URL]
 cd jose-quiros-portfolio
 ```
 
-2. Instala las dependencias:
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Ejecuta el servidor de desarrollo:
+3. Run the development server:
 ```bash
 npm run dev
 ```
 
-4. Abre tu navegador en `http://localhost:5173`
+4. Open your browser at `http://localhost:5173`
 
-## 🏗️ Scripts Disponibles
+## 🏗️ Available Scripts
 
-- `npm run dev` - Ejecuta el servidor de desarrollo
-- `npm run build` - Construye la aplicación para producción
-- `npm run preview` - Previsualiza la versión de producción
-- `npm run type-check` - Verifica los tipos de TypeScript
+- `npm run dev` - Runs the development server
+- `npm run build` - Builds the application for production
+- `npm run preview` - Previews the production build
+- `npm run type-check` - Checks TypeScript types
 
-## 📱 Secciones del Portafolio
+## 📱 Portfolio Sections
 
-- **Hero**: Presentación principal con información de contacto
-- **Sobre mí**: Biografía profesional y educación
-- **Experiencia**: Historial laboral detallado
-- **Proyectos**: Proyectos destacados con tecnologías utilizadas
-- **Tecnologías**: Skills y competencias técnicas
-- **Contacto**: Formulario de contacto e información
+- **Hero**: Main presentation with contact information
+- **About**: Professional biography and education
+- **Experience**: Detailed work history
+- **Projects**: Featured projects with technologies used
+- **Skills**: Technical skills and competencies
+- **Contact**: Contact form and information
 
-## 🎨 Personalización
+## 🎨 Customization
 
-El proyecto utiliza un sistema de colores personalizado definido en `tailwind.config.js`. Los colores principales pueden ser modificados fácilmente:
+The project uses a custom color system defined in `tailwind.config.js`. Primary colors can be easily modified:
 
 ```javascript
 colors: {
   primary: {
-    // Personaliza los colores primarios aquí
+    // Customize primary colors here
   }
 }
 ```
 
-## 📧 Contacto
+## 📧 Contact
 
 - Email: jqm.25@hotmail.es
 - LinkedIn: [José Alberto Quirós Montenegro](https://www.linkedin.com/in/josé-alberto-quirós-montenegro)
-- Teléfono: +506 8558-4070
-- Ubicación: Turrialba, Cartago, Costa Rica
+- Phone: +506 8558-4070
+- Location: Turrialba, Cartago, Costa Rica
 
-## 📄 Licencia
+## 📄 License
 
-Este proyecto es de uso personal y profesional de José Quirós Montenegro.
+This project is for personal and professional use by José Quirós Montenegro.
 
 ---
 
-Desarrollado con ❤️ por José Quirós Montenegro 
+Developed with ❤️ by José Quirós Montenegro 
