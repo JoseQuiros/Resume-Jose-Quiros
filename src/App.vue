@@ -173,16 +173,16 @@
     <!-- Experience Section -->
     <section id="experience" class="section-padding transition-colors duration-300" :class="darkMode ? 'bg-dark-900' : 'bg-white'">
       <div class="section-container">
-        <div class="text-center mb-16 animate-slide-up">
+        <div class="text-center mb-16 animate-fade-in-up">
           <h2 class="text-3xl lg:text-4xl font-bold mb-6 transition-colors duration-300" :class="darkMode ? 'text-white' : 'text-gray-900'">
             Professional Experience
           </h2>
-          <div class="w-24 h-1 bg-primary-600 mx-auto mb-8"></div>
+          <div class="w-24 h-1 bg-primary-600 mx-auto mb-8 pulse-glow"></div>
         </div>
         <div class="max-w-4xl mx-auto">
-          <div class="space-y-8">
+          <div class="space-y-12">
             <!-- Experience Item 1 -->
-            <div class="rounded-2xl shadow-lg p-8 card-hover animate-slide-in-left transition-colors duration-300" 
+            <div class="experience-card rounded-2xl shadow-lg p-8 animate-fade-in-left animate-stagger-1 transition-colors duration-300" 
                  :class="darkMode ? 'bg-dark-800' : 'bg-white'">
               <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
                 <div>
@@ -192,7 +192,7 @@
                   <p class="text-primary-600 font-semibold mb-2">NearLinx</p>
                 </div>
                 <div class="flex items-center transition-colors duration-300" :class="darkMode ? 'text-gray-400' : 'text-gray-500'">
-                  <Calendar class="w-4 h-4 mr-2" />
+                  <Calendar class="w-4 h-4 mr-2 icon-float" />
                   <span>Jan 2025 - Present</span>
                 </div>
               </div>
@@ -200,27 +200,27 @@
                 Designed and implemented backend features using Java Spring Boot and SQL, resolving bugs and 
                 writing unit/integration tests to ensure code quality.
               </p>
-              <div class="mb-4">
-                <h4 class="font-semibold mb-2 transition-colors duration-300" :class="darkMode ? 'text-white' : 'text-gray-900'">
+              <div class="mb-6">
+                <h4 class="font-semibold mb-3 transition-colors duration-300" :class="darkMode ? 'text-white' : 'text-gray-900'">
                   Key Responsibilities:
                 </h4>
-                <ul class="list-disc list-inside space-y-1 transition-colors duration-300" :class="darkMode ? 'text-gray-300' : 'text-gray-600'">
+                <ul class="list-disc list-inside space-y-2 transition-colors duration-300" :class="darkMode ? 'text-gray-300' : 'text-gray-600'">
                   <li>Refactored stored procedures and optimized database queries to improve performance</li>
                   <li>Led database cleanup and normalization initiatives</li>
                   <li>Applied SQL best practices and consistent conventions</li>
                   <li>Utilized Cursor with various AI models for development and migration tasks</li>
                 </ul>
               </div>
-              <div class="flex flex-wrap gap-2">
-                <span class="tech-badge-dark" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Java Spring Boot</span>
-                <span class="tech-badge-dark" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">SQL Server</span>
-                <span class="tech-badge-dark" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">JUnit</span>
-                <span class="tech-badge-dark" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Azure DevOps</span>
+              <div class="flex flex-wrap gap-3">
+                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Java Spring Boot</span>
+                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">SQL Server</span>
+                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">JUnit</span>
+                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Azure DevOps</span>
               </div>
             </div>
 
             <!-- Experience Item 2 -->
-            <div class="rounded-2xl shadow-lg p-8 card-hover animate-slide-in-right transition-colors duration-300" 
+            <div class="experience-card rounded-2xl shadow-lg p-8 animate-fade-in-right animate-stagger-2 transition-colors duration-300" 
                  :class="darkMode ? 'bg-dark-800' : 'bg-white'">
               <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
                 <div>
@@ -230,32 +230,32 @@
                   <p class="text-primary-600 font-semibold mb-2">NearLinx</p>
                 </div>
                 <div class="flex items-center transition-colors duration-300" :class="darkMode ? 'text-gray-400' : 'text-gray-500'">
-                  <Calendar class="w-4 h-4 mr-2" />
+                  <Calendar class="w-4 h-4 mr-2 icon-float" />
                   <span>Nov 2023 - Dec 2024</span>
                 </div>
               </div>
               <p class="leading-relaxed mb-4 transition-colors duration-300" :class="darkMode ? 'text-gray-300' : 'text-gray-600'">
                 Diagnosed and resolved production issues, including application bugs and data errors.
               </p>
-              <div class="mb-4">
-                <h4 class="font-semibold mb-2 transition-colors duration-300" :class="darkMode ? 'text-white' : 'text-gray-900'">
+              <div class="mb-6">
+                <h4 class="font-semibold mb-3 transition-colors duration-300" :class="darkMode ? 'text-white' : 'text-gray-900'">
                   Key Achievements:
                 </h4>
-                <ul class="list-disc list-inside space-y-1 transition-colors duration-300" :class="darkMode ? 'text-gray-300' : 'text-gray-600'">
+                <ul class="list-disc list-inside space-y-2 transition-colors duration-300" :class="darkMode ? 'text-gray-300' : 'text-gray-600'">
                   <li>Fixed data inconsistencies and generated missing records</li>
                   <li>Automated recurring billing and provisioning tasks with Python and SQL</li>
                   <li>Contributed to performance investigations</li>
                 </ul>
               </div>
-              <div class="flex flex-wrap gap-2">
-                <span class="tech-badge-dark" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Java Spring Boot</span>
-                <span class="tech-badge-dark" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Python</span>
-                <span class="tech-badge-dark" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">SQL Server</span>
+              <div class="flex flex-wrap gap-3">
+                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Java Spring Boot</span>
+                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Python</span>
+                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">SQL Server</span>
               </div>
             </div>
 
             <!-- Experience Item 3 -->
-            <div class="rounded-2xl shadow-lg p-8 card-hover animate-slide-in-left transition-colors duration-300" 
+            <div class="experience-card rounded-2xl shadow-lg p-8 animate-fade-in-left animate-stagger-3 transition-colors duration-300" 
                  :class="darkMode ? 'bg-dark-800' : 'bg-white'">
               <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
                 <div>
@@ -265,24 +265,24 @@
                   <p class="text-primary-600 font-semibold mb-2">NearLinx</p>
                 </div>
                 <div class="flex items-center transition-colors duration-300" :class="darkMode ? 'text-gray-400' : 'text-gray-500'">
-                  <Calendar class="w-4 h-4 mr-2" />
+                  <Calendar class="w-4 h-4 mr-2 icon-float" />
                   <span>Dec 2022 - Nov 2023</span>
                 </div>
               </div>
-              <p class="leading-relaxed mb-4 transition-colors duration-300" :class="darkMode ? 'text-gray-300' : 'text-gray-600'">
+              <p class="leading-relaxed mb-6 transition-colors duration-300" :class="darkMode ? 'text-gray-300' : 'text-gray-600'">
                 Developed a web application using a low-code platform, enhancing its capabilities through custom JavaScript and SQL scripts. 
                 Managed user support requests, ensuring SLA compliance. Collaborated directly with clients to analyze problems and deliver appropriate solutions.
               </p>
-              <div class="flex flex-wrap gap-2">
-                <span class="tech-badge-dark" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Low-code platform</span>
-                <span class="tech-badge-dark" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Microsoft SQL Server</span>
-                <span class="tech-badge-dark" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">GitLab</span>
-                <span class="tech-badge-dark" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">JavaScript</span>
+              <div class="flex flex-wrap gap-3">
+                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Low-code platform</span>
+                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Microsoft SQL Server</span>
+                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">GitLab</span>
+                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">JavaScript</span>
               </div>
             </div>
 
             <!-- Experience Item 4 -->
-            <div class="rounded-2xl shadow-lg p-8 card-hover animate-slide-in-right transition-colors duration-300" 
+            <div class="experience-card rounded-2xl shadow-lg p-8 animate-fade-in-right animate-stagger-4 transition-colors duration-300" 
                  :class="darkMode ? 'bg-dark-800' : 'bg-white'">
               <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
                 <div>
@@ -292,28 +292,28 @@
                   <p class="text-primary-600 font-semibold mb-2">NearLinx</p>
                 </div>
                 <div class="flex items-center transition-colors duration-300" :class="darkMode ? 'text-gray-400' : 'text-gray-500'">
-                  <Calendar class="w-4 h-4 mr-2" />
+                  <Calendar class="w-4 h-4 mr-2 icon-float" />
                   <span>Jul 2022 - Dec 2022</span>
                 </div>
               </div>
               <p class="leading-relaxed mb-4 transition-colors duration-300" :class="darkMode ? 'text-gray-300' : 'text-gray-600'">
                 Built RESTful APIs with ASP.NET and developed responsive front-end interfaces using Vue.js.
               </p>
-              <div class="mb-4">
-                <h4 class="font-semibold mb-2 transition-colors duration-300" :class="darkMode ? 'text-white' : 'text-gray-900'">
+              <div class="mb-6">
+                <h4 class="font-semibold mb-3 transition-colors duration-300" :class="darkMode ? 'text-white' : 'text-gray-900'">
                   Technologies used:
                 </h4>
-                <ul class="list-disc list-inside space-y-1 transition-colors duration-300" :class="darkMode ? 'text-gray-300' : 'text-gray-600'">
+                <ul class="list-disc list-inside space-y-2 transition-colors duration-300" :class="darkMode ? 'text-gray-300' : 'text-gray-600'">
                   <li>Database access management via Entity Framework and LINQ</li>
                   <li>Unit/integration testing implementation with NUnit, Moq, and Jest</li>
                   <li>CI/CD pipeline configuration with GitHub Actions for Azure deployments</li>
                 </ul>
               </div>
-              <div class="flex flex-wrap gap-2">
-                <span class="tech-badge-dark" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">ASP.NET</span>
-                <span class="tech-badge-dark" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Vue.js</span>
-                <span class="tech-badge-dark" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Entity Framework</span>
-                <span class="tech-badge-dark" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">GitHub Actions</span>
+              <div class="flex flex-wrap gap-3">
+                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">ASP.NET</span>
+                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Vue.js</span>
+                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">Entity Framework</span>
+                <span class="tech-badge-animated px-3 py-2 rounded-full text-sm font-medium border transition-all duration-300" :class="darkMode ? 'bg-primary-900/50 text-primary-300 border-primary-700' : 'bg-primary-100 text-primary-800 border-primary-200'">GitHub Actions</span>
               </div>
             </div>
           </div>
